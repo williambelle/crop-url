@@ -14,5 +14,11 @@
   ],
   "author": "William Belle <william.belle@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/williambelle/crop-url.git"
+  "repository": "https://github.com/williambelle/crop-url.git",
+  "scripts": {
+    "test": "jshint ."
+  },
+  "devDependencies": {
+    "jshint": "~2.9.4"
+  }
 }
