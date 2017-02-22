@@ -1,0 +1,18 @@
+{
+  "name": "crop-url",
+  "version": "0.0.1",
+  "description": "Truncate a url so that it doesn't appear so long visually",
+  "keywords": [
+    "crop",
+    "cut",
+    "limit",
+    "shorten",
+    "string",
+    "truncate",
+    "uri",
+    "url"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/williambelle/crop-url.git"
+}
