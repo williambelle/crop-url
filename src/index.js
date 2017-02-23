@@ -14,6 +14,9 @@ module.exports = function(url, length) {
     return url;
   }
 
+  // Remove http:// or https://
+  url = url.replace(/^https?:\/\//, '');
+
   // Replace /foo/bar/foo/ with /…/…/…/
   var urlLength = url.length;
   while (urlLength > length) {
