@@ -19,4 +19,16 @@ describe('cropUrl', function(){
       cropUrl('foobar', 69);
     }).should.not.throw(TypeError, 'Expected length to be a number');
   });
+
+  it('should crop url', function(){
+    cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26).should.equal(
+      'http://www.foobar.com/…/index.html'
+    );
+    cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 26).should.equal(
+      'http://www.foobar.com/…/jkl/'
+    );
+    cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1).should.equal(
+      'http://www.foobar.com/…/jkl/'
+    );
+  });
 });

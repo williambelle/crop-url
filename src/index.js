@@ -14,4 +14,18 @@ module.exports = function(url, length) {
     return url;
   }
 
+  // Replace /foo/bar/foo/ with /…/…/…/
+  var urlLength = url.length;
+  while (urlLength > length) {
+    url = url.replace(/(.*[^\/])\/[^\/…]+\/([^\/])/, '$1/…/$2');
+    if (url.length === urlLength) {
+      break;
+    } else {
+      urlLength = url.length;
+    }
+  }
+  // Replace /…/…/…/ with /…/
+  url = url.replace(/\/…\/(?:…\/)+/, '/…/');
+
+  return url;
 };
