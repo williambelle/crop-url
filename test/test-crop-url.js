@@ -33,5 +33,11 @@ describe('cropUrl', function(){
     cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1).should.equal(
       'foobar.com/…/jkl/'
     );
+    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35).should.equal(
+      'foobar.com/search/?q=foo&page=bar'
+    );
+    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 25).should.equal(
+      'foobar.com/…/?q=foo&…'
+    );
   });
 });

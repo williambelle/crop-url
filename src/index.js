@@ -33,5 +33,14 @@ module.exports = function(url, length) {
   // Replace /…/…/…/ with /…/
   url = url.replace(/\/…\/(?:…\/)+/, '/…/');
 
+  // Replace params
+  while (url.length > length) {
+    var idx = url.lastIndexOf('&');
+    if (idx === -1) {
+      break;
+    }
+    url = url.substring(0,idx) + '&…';
+  }
+
   return url;
 };
