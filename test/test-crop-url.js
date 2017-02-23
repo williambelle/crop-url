@@ -21,14 +21,17 @@ describe('cropUrl', function(){
   });
 
   it('should crop url', function(){
+    cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 99).should.equal(
+      'http://www.foobar.com/abc/def/ghi/index.html'
+    );
     cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26).should.equal(
-      'www.foobar.com/…/index.html'
+      'foobar.com/…/index.html'
     );
     cropUrl('https://www.foobar.com/abc/def/ghi/jkl/', 26).should.equal(
-      'www.foobar.com/…/jkl/'
+      'foobar.com/abc/def/…/jkl/'
     );
     cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1).should.equal(
-      'www.foobar.com/…/jkl/'
+      'foobar.com/…/jkl/'
     );
   });
 });
