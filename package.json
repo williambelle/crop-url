@@ -16,9 +16,11 @@
   "license": "MIT",
   "repository": "https://github.com/williambelle/crop-url.git",
   "scripts": {
-    "test": "jshint ."
+    "test": "jshint . && mocha"
   },
   "devDependencies": {
-    "jshint": "~2.9.4"
+    "chai": "^3.5.0",
+    "jshint": "~2.9.4",
+    "mocha": "^3.2.0"
   }
 }
