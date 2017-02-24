@@ -15,6 +15,9 @@
   "author": "William Belle <william.belle@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/williambelle/crop-url.git",
+  "files": [
+    "src/index.js"
+  ],
   "scripts": {
     "test": "jshint . && mocha",
     "coverage": "istanbul cover _mocha",
