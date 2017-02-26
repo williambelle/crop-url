@@ -37,7 +37,10 @@ describe('cropUrl', function(){
       'foobar.com/search/?q=foo&page=bar'
     );
     cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 25).should.equal(
-      'foobar.com/…/?q=foo&…'
+      'foobar.com/…/?q=foo…'
+    );
+    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 15).should.equal(
+      'foobar.com/…/?q=foo…'
     );
   });
 });

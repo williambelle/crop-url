@@ -39,7 +39,7 @@ module.exports = function(url, length) {
     if (idx === -1) {
       break;
     }
-    url = url.substring(0,idx) + '&…';
+    url = url.substring(0,idx) + '…';
   }
 
   return url;
