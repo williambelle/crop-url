@@ -1,6 +1,6 @@
 {
   "name": "crop-url",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Truncate a url so that it doesn't appear so long visually",
   "keywords": [
     "crop",
