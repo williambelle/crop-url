@@ -21,20 +21,26 @@ Usage
 ```js
 var cropUrl = require('crop-url');
 
-cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26)
+cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26);
 //=> 'foobar.com/…/index.html'
 
-cropUrl('https://www.foobar.com/abc/def/ghi/jkl/', 26)
+cropUrl('https://www.foobar.com/abc/def/ghi/jkl/', 26);
 //=> 'foobar.com/abc/def/…/jkl/'
 
-cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1)
+cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1);
 //=> 'foobar.com/…/jkl/'
 
-cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35)
+cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35);
 //=> 'foobar.com/search/?q=foo&page=bar'
 
-cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 25)
-//=> 'foobar.com/…/?q=foo&…'
+cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 20);
+//=> 'foobar.com/…/?q=foo…'
+
+cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12);
+//=> foobar.com/…/?…
+
+cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12);
+//=> 'foobar.com/foo…'
 ```
 
 License
