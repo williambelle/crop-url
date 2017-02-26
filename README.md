@@ -37,7 +37,7 @@ cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 20);
 //=> 'foobar.com/…/?q=foo…'
 
 cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12);
-//=> foobar.com/…/?…
+//=> 'foobar.com/…/?…'
 
 cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12);
 //=> 'foobar.com/foo…'
