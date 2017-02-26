@@ -51,5 +51,14 @@ module.exports = function(url, length) {
     }
   }
 
+  // Remove endless hyphens
+  while (url.length > length) {
+    idx = url.lastIndexOf('-');
+    if (idx === -1) {
+      break;
+    }
+    url = url.substring(0,idx) + '…';
+  }
+
   return url;
 };

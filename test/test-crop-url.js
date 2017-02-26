@@ -42,5 +42,8 @@ describe('cropUrl', function(){
     cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12).should.equal(
       'foobar.com/…/?…'
     );
+    cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12).should.equal(
+      'foobar.com/foo…'
+    );
   });
 });
