@@ -43,7 +43,7 @@ module.exports = function(url, length) {
     url = url.substring(0,idx) + '…';
   }
 
-  // Remove first param
+  // Replace first param
   if (url.length > length) {
     idx = url.lastIndexOf('?');
     if (idx !== -1) {
@@ -51,7 +51,7 @@ module.exports = function(url, length) {
     }
   }
 
-  // Remove endless hyphens
+  // Replace endless hyphens
   while (url.length > length) {
     idx = url.lastIndexOf('-');
     if (idx === -1) {
