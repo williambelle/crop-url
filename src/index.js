@@ -33,13 +33,22 @@ module.exports = function(url, length) {
   // Replace /…/…/…/ with /…/
   url = url.replace(/\/…\/(?:…\/)+/, '/…/');
 
-  // Replace params
+  // Replace all params except first
+  var idx;
   while (url.length > length) {
-    var idx = url.lastIndexOf('&');
+    idx = url.lastIndexOf('&');
     if (idx === -1) {
       break;
     }
     url = url.substring(0,idx) + '…';
+  }
+
+  // Remove first param
+  if (url.length > length) {
+    idx = url.lastIndexOf('?');
+    if (idx !== -1) {
+      url = url.substring(0,idx) + '?…';
+    }
   }
 
   return url;

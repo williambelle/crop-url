@@ -36,11 +36,11 @@ describe('cropUrl', function(){
     cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35).should.equal(
       'foobar.com/search/?q=foo&page=bar'
     );
-    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 25).should.equal(
+    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 20).should.equal(
       'foobar.com/…/?q=foo…'
     );
-    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 15).should.equal(
-      'foobar.com/…/?q=foo…'
+    cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12).should.equal(
+      'foobar.com/…/?…'
     );
   });
 });
