@@ -19,6 +19,9 @@
     "src/index.js"
   ],
   "main": "src/index.js",
+  "engines": {
+   "node": ">= 4.0.0"
+ },
   "scripts": {
     "test": "jshint . && mocha",
     "coverage": "istanbul cover _mocha",
