@@ -20,8 +20,8 @@
   ],
   "main": "src/index.js",
   "engines": {
-   "node": ">= 4.0.0"
- },
+    "node": ">= 4.0.0"
+  },
   "scripts": {
     "test": "jshint . && mocha",
     "coverage": "istanbul cover _mocha",
@@ -31,6 +31,6 @@
     "chai": "^4.1.2",
     "istanbul": "^0.4.5",
     "jshint": "~2.9.5",
-    "mocha": "^4.0.1"
+    "mocha": "^5.2.0"
   }
 }
