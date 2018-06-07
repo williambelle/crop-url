@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v1.1.0 / 2018-06-07
+
+  - Move to eslint
+  - Move to david-dm
+  - Update dependencies
+  - Disable `package-lock.json`
+
 ### v1.0.0 / 2017-10-06
 
   - Breaking Change - Drop support for unmaintained versions of Node.js
