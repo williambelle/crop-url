@@ -1,26 +1,26 @@
 'use strict';
 
-var should  = require('chai').should();
+require('chai').should();
 var cropUrl = require('../src/index.js');
 
-describe('cropUrl', function(){
-  it('should check input type', function(){
-    (function(){
-      cropUrl(51,69);
+describe('cropUrl', function () {
+  it('should check input type', function () {
+    (function () {
+      cropUrl(51, 69);
     }).should.throw(TypeError, 'Expected url to be a string');
-    (function(){
-      cropUrl('foobar',69);
+    (function () {
+      cropUrl('foobar', 69);
     }).should.not.throw(TypeError, 'Expected url to be a string');
 
-    (function(){
+    (function () {
       cropUrl('foobar', undefined);
     }).should.throw(TypeError, 'Expected length to be a number');
-    (function(){
+    (function () {
       cropUrl('foobar', 69);
     }).should.not.throw(TypeError, 'Expected length to be a number');
   });
 
-  it('should crop url', function(){
+  it('should crop url', function () {
     cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 99).should.equal(
       'http://www.foobar.com/abc/def/ghi/index.html'
     );

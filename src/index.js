@@ -1,7 +1,6 @@
 'use strict';
 
-module.exports = function(url, length) {
-
+module.exports = function (url, length) {
   if (typeof url !== 'string') {
     throw new TypeError('Expected url to be a string');
   }
@@ -23,7 +22,7 @@ module.exports = function(url, length) {
   // Replace /foo/bar/foo/ with /…/…/…/
   var urlLength = url.length;
   while (urlLength > length) {
-    url = url.replace(/(.*[^\/])\/[^\/…]+\/([^\/])/, '$1/…/$2');
+    url = url.replace(/(.*[^/])\/[^/…]+\/([^/])/, '$1/…/$2');
     if (url.length === urlLength) {
       break;
     } else {
@@ -40,14 +39,14 @@ module.exports = function(url, length) {
     if (idx === -1) {
       break;
     }
-    url = url.substring(0,idx) + '…';
+    url = url.substring(0, idx) + '…';
   }
 
   // Replace first param
   if (url.length > length) {
     idx = url.lastIndexOf('?');
     if (idx !== -1) {
-      url = url.substring(0,idx) + '?…';
+      url = url.substring(0, idx) + '?…';
     }
   }
 
@@ -57,7 +56,7 @@ module.exports = function(url, length) {
     if (idx === -1) {
       break;
     }
-    url = url.substring(0,idx) + '…';
+    url = url.substring(0, idx) + '…';
   }
 
   return url;
