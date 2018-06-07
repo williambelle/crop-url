@@ -3,7 +3,7 @@ Crop Url
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Dependency Status][gemnasium-image]][gemnasium-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
 [![NPM version][npm-image]][npm-url]
 
 Truncate a url so that it doesn't appear so long visually
@@ -54,5 +54,5 @@ The MIT License (MIT)
 [travis-url]: https://travis-ci.org/williambelle/crop-url
 [coveralls-image]: https://coveralls.io/repos/github/williambelle/crop-url/badge.svg
 [coveralls-url]: https://coveralls.io/github/williambelle/crop-url
-[gemnasium-image]: https://gemnasium.com/badges/github.com/williambelle/crop-url.svg
-[gemnasium-url]: https://gemnasium.com/github.com/williambelle/crop-url
+[daviddm-image]: https://david-dm.org/williambelle/crop-url/status.svg
+[daviddm-url]: https://david-dm.org/williambelle/crop-url
