@@ -1,4 +1,4 @@
-Crop Url
+crop-url
 ========
 
 [![Build Status][travis-image]][travis-url]
@@ -12,7 +12,7 @@ Install
 -------
 
 ```bash
-$ npm install crop-url --save
+npm i crop-url --save
 ```
 
 Usage
@@ -42,6 +42,18 @@ cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12);
 cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12);
 //=> 'foobar.com/foo…'
 ```
+
+Contributing
+------------
+
+Contributions are always welcome.
+
+See [Contributing](CONTRIBUTING.md).
+
+Developer
+---------
+
+  * [William Belle](https://github.com/williambelle)
 
 License
 -------
