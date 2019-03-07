@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v2.0.1 / 2019-03-07
+
+  - Update dev dependencies
+
 ### v2.0.0 / 2018-11-09
 
   - Drop support for Node < 6
@@ -11,7 +15,7 @@ Changelog
 
   - Move to eslint
   - Move to david-dm
-  - Update dependencies
+  - Update dev dependencies
   - Disable `package-lock.json`
 
 ### v1.0.0 / 2017-10-06
