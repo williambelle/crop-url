@@ -3,10 +3,10 @@ crop-url
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Dependency Status][daviddm-image]][daviddm-url]
+[![Dependencies Status][daviddm-image]][daviddm-url]
 [![NPM version][npm-image]][npm-url]
 
-Truncate a url so that it doesn't appear so long visually
+Truncate a url so that it doesn't appear so long visually.
 
 Install
 -------
@@ -19,28 +19,28 @@ Usage
 -----
 
 ```js
-var cropUrl = require('crop-url');
+const cropUrl = require('crop-url');
 
-cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26);
-//=> 'foobar.com/…/index.html'
+let url = cropUrl('http://www.foobar.com/abc/def/ghi/index.html', 26);
+console.log(url) //=> 'foobar.com/…/index.html'
 
-cropUrl('https://www.foobar.com/abc/def/ghi/jkl/', 26);
-//=> 'foobar.com/abc/def/…/jkl/'
+url = cropUrl('https://www.foobar.com/abc/def/ghi/jkl/', 26);
+console.log(url) //=> 'foobar.com/abc/def/…/jkl/'
 
-cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1);
-//=> 'foobar.com/…/jkl/'
+url = cropUrl('http://www.foobar.com/abc/def/ghi/jkl/', 1);
+console.log(url) //=> 'foobar.com/…/jkl/'
 
-cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35);
-//=> 'foobar.com/search/?q=foo&page=bar'
+url = cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 35);
+console.log(url) //=> 'foobar.com/search/?q=foo&page=bar'
 
-cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 20);
-//=> 'foobar.com/…/?q=foo…'
+url = cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 20);
+console.log(url) //=> 'foobar.com/…/?q=foo…'
 
-cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12);
-//=> 'foobar.com/…/?…'
+url = cropUrl('http://www.foobar.com/search/?q=foo&page=bar', 12);
+console.log(url) //=> 'foobar.com/…/?…'
 
-cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12);
-//=> 'foobar.com/foo…'
+url = cropUrl('http://www.foobar.com/foo-bar-foo-bar.html', 12);
+console.log(url) //=> 'foobar.com/foo…'
 ```
 
 Contributing
