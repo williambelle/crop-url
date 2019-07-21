@@ -20,7 +20,7 @@
   ],
   "main": "src/index.js",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "test": "eslint . && mocha",
