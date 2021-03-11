@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v4.0.0 / 2021-03-11
+
+  - Drop support for Node < 10
+  - Update and clean dev dependencies
+  - Test against Node.js 14 and 15
+  - Migrate from Travis CI to GitHub Actions
+
 ### v3.0.1 / 2020-01-26
 
   - Update dev dependencies
