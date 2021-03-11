@@ -1,7 +1,7 @@
 'use strict';
 
 require('chai').should();
-var cropUrl = require('../src/index.js');
+const cropUrl = require('../src/index.js');
 
 describe('cropUrl', function () {
   it('should check input type', function () {

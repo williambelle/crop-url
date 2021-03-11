@@ -20,7 +20,7 @@ module.exports = function (url, length) {
   url = url.replace(/^www\./, '');
 
   // Replace /foo/bar/foo/ with /…/…/…/
-  var urlLength = url.length;
+  let urlLength = url.length;
   while (urlLength > length) {
     url = url.replace(/(.*[^/])\/[^/…]+\/([^/])/, '$1/…/$2');
     if (url.length === urlLength) {
@@ -33,7 +33,7 @@ module.exports = function (url, length) {
   url = url.replace(/\/…\/(?:…\/)+/, '/…/');
 
   // Replace all params except first
-  var idx;
+  let idx;
   while (url.length > length) {
     idx = url.lastIndexOf('&');
     if (idx === -1) {
