@@ -12,7 +12,7 @@ Install
 -------
 
 ```bash
-npm i crop-url --save
+npm i crop-url
 ```
 
 Usage
@@ -53,7 +53,7 @@ See [Contributing](CONTRIBUTING.md).
 Developer
 ---------
 
-  * [William Belle](https://github.com/williambelle)
+* [William Belle](https://github.com/williambelle)
 
 License
 -------
