@@ -3,7 +3,6 @@ crop-url
 
 [![Build Status][github-actions-image]][github-actions-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![Dependencies Status][daviddm-image]][daviddm-url]
 [![NPM version][npm-image]][npm-url]
 
 Truncate a url so that it doesn't appear so long visually.
@@ -66,5 +65,3 @@ The MIT License (MIT)
 [github-actions-url]: https://github.com/williambelle/crop-url/actions
 [coveralls-image]: https://coveralls.io/repos/github/williambelle/crop-url/badge.svg
 [coveralls-url]: https://coveralls.io/github/williambelle/crop-url
-[daviddm-image]: https://david-dm.org/williambelle/crop-url/status.svg
-[daviddm-url]: https://david-dm.org/williambelle/crop-url
